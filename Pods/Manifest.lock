@@ -1,0 +1,76 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.5.6)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - STPopup (1.8.7)
+  - YYCategories (1.0.12)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (from `https://github.com/xfdev/AFNetworking.git`)
+  - IQKeyboardManager
+  - Masonry (from `https://github.com/warpling/Masonry.git`)
+  - MBProgressHUD (~> 1.2.0)
+  - SDWebImage
+  - STPopup
+  - YYCategories (from `https://github.com/xfdev/YYCategories.git`)
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - MBProgressHUD
+    - SDWebImage
+    - STPopup
+    - YYModel
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/xfdev/AFNetworking.git
+  Masonry:
+    :git: https://github.com/warpling/Masonry.git
+  YYCategories:
+    :git: https://github.com/xfdev/YYCategories.git
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: d8cd3f07aa87af42a82167f73124047afd98388a
+    :git: https://github.com/xfdev/AFNetworking.git
+  Masonry:
+    :commit: 3133d6c26069e2c626afb0a62e9e93e0a65b123e
+    :git: https://github.com/warpling/Masonry.git
+  YYCategories:
+    :commit: 45c2057947c936c13ab815114b766bdba4ad3028
+    :git: https://github.com/xfdev/YYCategories.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5208ac250b141aeceab4fc1bcf9664e9868d48e5
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
+  YYCategories: b4d40f4cf7a6a391486b0cc81fec573291041204
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: d6795b103d33189ca3c01607bf9dde1d742df114
+
+COCOAPODS: 1.9.3

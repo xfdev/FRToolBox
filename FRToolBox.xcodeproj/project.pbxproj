@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50D96EAC3E8DA5B0E6246A8 /* Pods_FRToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140D503BF762ACFD5E733BFA /* Pods_FRToolBox.framework */; };
 		E073A5D52611860A00C694D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E073A5D42611860A00C694D9 /* AppDelegate.m */; };
 		E073A5D82611860A00C694D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E073A5D72611860A00C694D9 /* SceneDelegate.m */; };
 		E073A5DB2611860A00C694D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E073A5DA2611860A00C694D9 /* ViewController.m */; };
@@ -23,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063182C45AB9928D1C311307 /* Pods-FRToolBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolBox.release.xcconfig"; path = "Target Support Files/Pods-FRToolBox/Pods-FRToolBox.release.xcconfig"; sourceTree = "<group>"; };
+		140D503BF762ACFD5E733BFA /* Pods_FRToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		877ED13757A23CB619C119D0 /* Pods-FRToolBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolBox.debug.xcconfig"; path = "Target Support Files/Pods-FRToolBox/Pods-FRToolBox.debug.xcconfig"; sourceTree = "<group>"; };
 		E073A5D02611860A00C694D9 /* FRToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E073A5D32611860A00C694D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E073A5D42611860A00C694D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,17 +60,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50D96EAC3E8DA5B0E6246A8 /* Pods_FRToolBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A809BA43F39094C0065812C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140D503BF762ACFD5E733BFA /* Pods_FRToolBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E073A5C72611860A00C694D9 = {
 			isa = PBXGroup;
 			children = (
 				E073A5D22611860A00C694D9 /* FRToolBox */,
 				E073A5D12611860A00C694D9 /* Products */,
+				E22CC03D63C76C7CB10A7901 /* Pods */,
+				8A809BA43F39094C0065812C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +149,16 @@
 			path = FRCategory;
 			sourceTree = "<group>";
 		};
+		E22CC03D63C76C7CB10A7901 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				877ED13757A23CB619C119D0 /* Pods-FRToolBox.debug.xcconfig */,
+				063182C45AB9928D1C311307 /* Pods-FRToolBox.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E073A5E92611860C00C694D9 /* Build configuration list for PBXNativeTarget "FRToolBox" */;
 			buildPhases = (
+				A57A4FF2E8FEA24404E70BE8 /* [CP] Check Pods Manifest.lock */,
 				E073A5CC2611860A00C694D9 /* Sources */,
 				E073A5CD2611860A00C694D9 /* Frameworks */,
 				E073A5CE2611860A00C694D9 /* Resources */,
+				585D07955451D897CBAC62BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		585D07955451D897CBAC62BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FRToolBox/Pods-FRToolBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FRToolBox/Pods-FRToolBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FRToolBox/Pods-FRToolBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57A4FF2E8FEA24404E70BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FRToolBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E073A5CC2611860A00C694D9 /* Sources */ = {
@@ -354,6 +423,7 @@
 		};
 		E073A5EA2611860C00C694D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 877ED13757A23CB619C119D0 /* Pods-FRToolBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +444,7 @@
 		};
 		E073A5EB2611860C00C694D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063182C45AB9928D1C311307 /* Pods-FRToolBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
